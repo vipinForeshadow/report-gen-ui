@@ -1,8 +1,6 @@
 import { Inter } from "next/font/google";
 import { useState } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
-
 const Integration = () => {
   const [file, setFile] = useState(null);
   const [email, setEmail] = useState("");
@@ -39,11 +37,6 @@ const Integration = () => {
     }
   };
 
-  /*  product_signals = ["store", "sale", "storefront", "purchase", "buy", "product", "cart", "discount", "price", "credit card", "paypal", "rewards"]
-coaching_signals = ["mentor", "mentoring", "guru", "gurus", "1 on 1", "1:1", "class", "classes", "consultant", "business", "businesses", "masterclass"]
-ebooks_signals = ["ebook", "ebooks", "pdf", "download", "book", "guide", "kindle", "mobi", "epub", "author", "authors", "books", "published", "reader"]
-external_store_signals = ["amazon", "craigslist", "ebay", "bestbuy", "wish", "walmart"] */
-
   const validateEmail = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
@@ -69,7 +62,6 @@ external_store_signals = ["amazon", "craigslist", "ebay", "bestbuy", "wish", "wa
   };
 
   const handleSubmit = () => {
-    // Validate email before submission
     if (!validateEmail()) {
       return;
     }
