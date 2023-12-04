@@ -81,7 +81,7 @@ external_store_signals = ["amazon", "craigslist", "ebay", "bestbuy", "wish", "wa
     formData.append("email", email);
     formData.append("custom_signals", constructCustomSignals());
 
-    fetch("http://34.123.57.61:6000/getLeads", {
+    fetch("http://34.123.57.61:5000/getLeads", {
       method: "POST",
       body: formData,
     })
