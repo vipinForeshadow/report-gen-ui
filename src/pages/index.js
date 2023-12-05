@@ -93,7 +93,7 @@ const Integration = () => {
     <div className="container mx-auto my-10 w-[100vw] lg:w-[40vw] px-4">
       <h1 className="text-3xl font-bold mb-4">Lead keywords Report</h1>
       <p className="text-sm text-gray-400">
-        Upload the csv and input your Keywords
+        Upload the xlsx file and input your Keywords
       </p>
       <input
         type="file"
