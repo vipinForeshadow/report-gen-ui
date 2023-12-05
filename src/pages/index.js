@@ -73,7 +73,7 @@ const Integration = () => {
     formData.append("email", email);
     formData.append("custom_signals", constructCustomSignals());
 
-    fetch("http://34.123.57.61:5000/getLeads", {
+    fetch("http://127.0.0.1:5000/getLeads", {
       method: "POST",
       body: formData,
     })
@@ -95,7 +95,12 @@ const Integration = () => {
       <p className="text-sm text-gray-400">
         Upload the csv and input your Keywords
       </p>
-      <input type="file" className="mt-4" onChange={handleFileChange} />
+      <input
+        type="file"
+        className="mt-4"
+        onChange={handleFileChange}
+        accept=".xlsx"
+      />
       <div className="my-4">
         <label className="block mb-2">Email:</label>
         <input
